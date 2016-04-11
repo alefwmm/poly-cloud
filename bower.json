@@ -22,8 +22,8 @@
   "dependencies": {
     "polymer": "~1.4.0",
     "iron-ajax": "PolymerElements/iron-ajax#~1.2.0",
-    "d3": "~3.5.0",
-    "d3-cloud": "~1.2.0"
+    "d3-cloud": "~1.2.0",
+    "d3-import": "RenatoUtsch/d3-import#~1.0.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#~1.1.5"
