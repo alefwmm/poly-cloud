@@ -276,16 +276,12 @@ You may change `rotate` function to generate random rotations.
                     return d.size;
                 }
 
-                function logSize(d) {
-                    return Math.log(size(d));
-                }
-
                 function fontSize(d) {
                     return size(d) + "px";
                 }
 
                 function scaledSize(d) {
-                    return this._scale(logSize(d));
+                    return this._scale(size(d));
                 }
 
                 function fill(d, i) {
@@ -343,10 +339,10 @@ You may change `rotate` function to generate random rotations.
                 // Starting scale object. Log scale by default.
                 this._scale
                     .domain([
-                        d3.min(this.data, logSize),
-                        d3.max(this.data, logSize)
+                        d3.min(this.data, size),
+                        d3.max(this.data, size)
                     ])
-                    .range([30, this.width / 4]);
+                    .range([12, this.width / 4]);
 
                 // (Re)create the word cloud if the data is not null.
                 if (this.data) {
